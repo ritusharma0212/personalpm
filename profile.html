@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ritu Sharma — Product, Data Science and AI leader building enterprise products around measurable outcomes.">
+  <title>Ritu Sharma — Product, Data Science & AI</title>
+  <style>
+    :root{
+      --bg:#f5f5f7; --surface:#fff; --text:#1d1d1f; --muted:#6e6e73;
+      --line:#d2d2d7; --accent:#0071e3; --dark:#161617; --max:1180px;
+      --radius:30px; --shadow:0 18px 60px rgba(0,0,0,.08);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Helvetica Neue",Arial,sans-serif;line-height:1.45}
+    a{color:inherit;text-decoration:none}
+    .nav{position:sticky;top:0;z-index:20;background:rgba(245,245,247,.82);backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(210,210,215,.65)}
+    .nav-inner{max-width:var(--max);margin:auto;height:54px;display:flex;align-items:center;justify-content:space-between;padding:0 24px}
+    .brand{font-weight:700;letter-spacing:-.02em}.brand span{color:var(--muted);font-weight:500}
+    .nav-links{display:flex;gap:28px;font-size:13px;color:#424245}
+    .nav-links a:hover{color:var(--accent)}
+    .wrap{max-width:var(--max);margin:auto;padding:0 24px}
+    .hero{min-height:calc(100vh - 54px);display:flex;align-items:center;padding:72px 0 96px}
+    .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:70px;align-items:end;width:100%}
+    .eyebrow{font-size:15px;font-weight:600;color:var(--accent);margin-bottom:20px}
+    h1{font-size:clamp(58px,8vw,108px);line-height:.94;letter-spacing:-.075em;margin:0 0 34px;max-width:900px}
+    .hero-copy{font-size:clamp(21px,2.5vw,30px);letter-spacing:-.035em;color:#424245;max-width:760px;margin:0}
+    .hero-meta{border-left:1px solid var(--line);padding-left:30px;color:var(--muted);font-size:15px}
+    .hero-meta strong{display:block;color:var(--text);font-size:20px;margin-bottom:5px}
+    .hero-meta .item{padding:0 0 28px}
+    .pill-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:36px}
+    .pill{padding:9px 14px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.5);font-size:13px;color:#424245}
+    section{padding:100px 0}
+    .section-head{display:flex;justify-content:space-between;align-items:baseline;gap:30px;margin-bottom:42px}
+    .section-kicker{font-size:14px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+    h2{font-size:clamp(40px,5vw,64px);letter-spacing:-.055em;line-height:1;margin:0}
+    .intro{max-width:570px;color:var(--muted);font-size:18px}
+    .outcomes{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+    .outcome{background:var(--surface);border-radius:var(--radius);padding:30px;min-height:230px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 1px 0 rgba(0,0,0,.03)}
+    .number{font-size:56px;letter-spacing:-.06em;font-weight:650;line-height:1}
+    .outcome p{margin:20px 0 0;font-size:15px;color:#6e6e73}
+    .featured{background:var(--dark);color:white;border-radius:38px;padding:58px;box-shadow:var(--shadow)}
+    .featured-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+    .featured .eyebrow{color:#64b5ff}
+    .featured h3{font-size:clamp(38px,4.5vw,62px);line-height:.98;letter-spacing:-.055em;margin:0 0 24px}
+    .featured p{color:#a1a1a6;font-size:17px;max-width:580px}
+    .impact-list{display:grid;gap:1px;background:#343437;border-radius:24px;overflow:hidden;align-self:center}
+    .impact{background:#202023;padding:22px 24px;display:flex;justify-content:space-between;gap:20px;align-items:center}
+    .impact b{font-size:25px;letter-spacing:-.03em}.impact span{color:#a1a1a6;text-align:right;font-size:14px}
+    .work-grid{display:grid;gap:12px}
+    .work{background:white;border-radius:var(--radius);padding:34px;display:grid;grid-template-columns:220px 1fr;gap:40px;align-items:start}
+    .work-year{font-size:14px;color:var(--muted);font-weight:600}
+    .work h3{font-size:29px;letter-spacing:-.04em;margin:0 0 8px}
+    .work .role{color:var(--accent);font-size:14px;font-weight:600;margin-bottom:20px}
+    .work ul{margin:0;padding-left:20px;color:#515154}.work li{margin:9px 0}
+    .quote{padding:100px 0 20px;text-align:center}
+    blockquote{font-size:clamp(34px,5vw,60px);line-height:1.03;letter-spacing:-.055em;max-width:920px;margin:0 auto 24px}
+    .quote p{color:var(--muted);margin:0}
+    .skills{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .skill{background:white;border-radius:24px;padding:27px}.skill h3{font-size:18px;margin:0 0 15px}.skill p{margin:0;color:var(--muted);font-size:15px}
+    .contact{background:white;border-radius:38px;padding:60px;margin:80px 0}
+    .contact h2{max-width:720px;margin-bottom:28px}.contact p{color:var(--muted);font-size:18px}
+    .contact-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+    .button{display:inline-flex;padding:13px 18px;border-radius:999px;background:var(--text);color:white;font-size:14px;font-weight:600}.button.secondary{background:#f5f5f7;color:var(--text)}
+    footer{padding:30px 0 50px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between}
+    @media(max-width:850px){
+      .nav-links{display:none}.hero{padding-top:55px}.hero-grid,.featured-grid{grid-template-columns:1fr;gap:45px}
+      .hero-meta{border-left:0;border-top:1px solid var(--line);padding:25px 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+      .hero-meta .item{padding:0}.outcomes{grid-template-columns:repeat(2,1fr)}.work{grid-template-columns:1fr;gap:12px}.skills{grid-template-columns:1fr}
+      .featured{padding:38px}.section-head{display:block}.intro{margin-top:20px}
+    }
+    @media(max-width:520px){
+      .wrap{padding:0 17px}.hero{min-height:auto;padding:65px 0 75px}.outcomes{grid-template-columns:1fr}.outcome{min-height:190px}
+      .hero-meta{grid-template-columns:1fr 1fr}.featured{border-radius:28px;padding:28px}.contact{border-radius:28px;padding:35px;margin:55px 0}
+      section{padding:70px 0}h1{font-size:58px}.nav-inner{padding:0 17px}footer{display:block}.footer-right{margin-top:8px}
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#">Ritu Sharma <span>/ Product × AI</span></a>
+      <div class="nav-links">
+        <a href="#impact">Impact</a><a href="#work">Work</a><a href="#approach">Approach</a><a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Product · Data Science · AI</div>
+          <h1>Turning complex data into products people use.</h1>
+          <p class="hero-copy">Product leader building enterprise data platforms, shared services, and AI-enabled products—with a focus on measurable business outcomes.</p>
+          <div class="pill-row">
+            <span class="pill">11+ years</span><span class="pill">Enterprise products</span><span class="pill">AI / ML</span><span class="pill">Data platforms</span>
+          </div>
+        </div>
+        <aside class="hero-meta">
+          <div class="item"><strong>JPMorgan Chase</strong>Product, Data Science & AI</div>
+          <div class="item"><strong>50+ data scientists</strong>Enabled through a centralized Insights Platform</div>
+          <div class="item"><strong>Plano, Texas</strong>United States</div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="impact">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Impact, in numbers.</h2>
+          <p class="intro">A product mindset starts with the outcome: faster decisions, lower operating effort, stronger adoption, and better customer engagement.</p>
+        </div>
+        <div class="outcomes">
+          <article class="outcome"><div class="number">70%</div><p>Reduction in model development overhead through a generalized forecasting engine.</p></article>
+          <article class="outcome"><div class="number">60%</div><p>Less manual reporting effort through intelligent summarization.</p></article>
+          <article class="outcome"><div class="number">50%</div><p>Faster query-to-insight time-to-market with a spec-driven SQL assistant.</p></article>
+          <article class="outcome"><div class="number">40%</div><p>Increase in customer engagement through data-driven product positioning.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="featured">
+          <div class="featured-grid">
+            <div>
+              <div class="eyebrow">Featured product story</div>
+              <h3>From standalone models to a scalable forecasting foundation.</h3>
+              <p>Architected and delivered a generalized, scalable time-series forecasting engine that replaced standalone models—reducing model development overhead while enabling automated forecasting at scale across 300+ metrics.</p>
+            </div>
+            <div class="impact-list">
+              <div class="impact"><b>70%</b><span>less model development overhead</span></div>
+              <div class="impact"><b>300+</b><span>metrics forecast automatically at scale</span></div>
+              <div class="impact"><b>0 → 1</b><span>product vision and multi-year roadmap</span></div>
+              <div class="impact"><b>95%</b><span>stakeholder satisfaction score</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Selected work.</h2>
+          <p class="intro">Across product leadership, applied AI, customer analytics, and enterprise data platforms.</p>
+        </div>
+        <div class="work-grid">
+          <article class="work">
+            <div class="work-year">2021 — Present<br>JPMorgan Chase</div>
+            <div>
+              <h3>Product, Data Science & AI</h3><div class="role">Enterprise data products · Insights · AI foundations</div>
+              <ul>
+                <li>Spearheaded 0-to-1 product vision and multi-year roadmap for a centralized Insights Platform used by 50+ data scientists.</li>
+                <li>Launched intelligent summarization, cutting manual reporting effort by 60%.</li>
+                <li>Shipped a spec-driven SQL assistant, cutting query-to-insight time-to-market by 50%.</li>
+                <li>Aligned 30+ stakeholders across sales, architecture, UX, MLOps, and Applied AI/ML around revenue-oriented product outcomes.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="work">
+            <div class="work-year">2020 — 2021<br>JPMorgan Chase</div>
+            <div>
+              <h3>Data Science Lead · Financial Products</h3><div class="role">Commercial & Investment Banking</div>
+              <ul>
+                <li>Built an AI/ML product recommendation system that increased cross-sell opportunities and revenue growth by 30%.</li>
+                <li>Designed client product-usage benchmarks across $500M+ portfolios, driving a 35% increase in digital adoption and wallet share.</li>
+                <li>Modernized recommendation engines with predictive ML and A/B testing, boosting customer engagement by 40%.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="work">
+            <div class="work-year">2019 — 2020<br>JPMorgan Chase</div>
+            <div>
+              <h3>Customer Experience Analytics Manager</h3><div class="role">Consumer & Community Banking</div>
+              <ul>
+                <li>Owned enterprise CX analytics strategy and core KPIs including NPS, CSAT, VoC, churn, and retention.</li>
+                <li>Built NLP models for complaint classification and forecasting, improving retention by 20% and reducing churn risk by 70%.</li>
+                <li>Automated analytics and reporting, accelerating insight delivery by 50% and improving data quality by 40%.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="work">
+            <div class="work-year">2018 — 2019<br>HCL Global Systems</div>
+            <div>
+              <h3>Data Engineer & Analytics Lead</h3><div class="role">Analytics products · Cloud · Predictive modeling</div>
+              <ul>
+                <li>Led analytics product delivery from discovery through production, translating business problems into requirements, KPIs, data models, and success metrics.</li>
+                <li>Migrated legacy platforms to scalable AI-enabled cloud architecture, boosting processing efficiency by 30%.</li>
+                <li>Built predictive models that improved inventory outcomes by 20% and forecast accuracy by 10%.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="work">
+            <div class="work-year">2014 — 2015<br>Infosys</div>
+            <div>
+              <h3>BI / Data Services Lead</h3><div class="role">SAP · HANA · Enterprise reporting</div>
+              <ul>
+                <li>Delivered end-to-end data solutions across design, development, modeling, extraction, transformation, optimization, and reporting.</li>
+                <li>Migrated legacy data to SAP HANA for faster processing and live reporting.</li>
+                <li>Optimized legacy processes, resulting in 50% RTE cost savings.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="work">
+            <div class="work-year">2011 — 2014<br>Larsen & Toubro Infotech</div>
+            <div>
+              <h3>BI / SAP Consultant</h3><div class="role">Client: Procter & Gamble</div>
+              <ul>
+                <li>Automated processes to reduce RTE cost by $100k annually.</li>
+                <li>Migrated data from R/3 to BW on HANA with 70% improvement in performance.</li>
+                <li>Achieved a score of 100% using data warehousing best practices during a CMMI audit.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="approach">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>How I build.</h2>
+          <p class="intro">Technical fluency is the foundation. Product judgment turns it into adoption, scale, and business value.</p>
+        </div>
+        <div class="skills">
+          <article class="skill"><h3>AI / ML</h3><p>GenAI, LLMs, AI Agents, RAG, Prompt Engineering, NLP, Predictive Models, GNNs, Applied AI/ML.</p></article>
+          <article class="skill"><h3>Product</h3><p>User Segmentation, Competitor Analysis, Product Ideation, Wireframing, UI/UX Design, Product Metrics, Roadmaps, Agile, A/B Testing, Feature Prioritization.</p></article>
+          <article class="skill"><h3>Data Platforms</h3><p>Databricks, Snowflake, Amazon Redshift, Vector Databases, Feature Stores.</p></article>
+          <article class="skill"><h3>Analytics & BI</h3><p>Tableau, Power BI, Alteryx, Python, SQL, R.</p></article>
+          <article class="skill"><h3>Cloud & Architecture</h3><p>AWS, Distributed Systems, APIs, Microservices.</p></article>
+          <article class="skill"><h3>Leadership</h3><p>Product vision, 12+ month roadmaps, enterprise data models, stakeholder alignment, execution excellence, and scalable service delivery.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote">
+      <div class="wrap">
+        <blockquote>“Build the platform once. Multiply the outcome.”</blockquote>
+        <p>Product thinking applied to data, AI, and enterprise scale.</p>
+      </div>
+    </section>
+
+    <div class="wrap" id="contact">
+      <div class="contact">
+        <div class="eyebrow">Let’s connect</div>
+        <h2>Interested in building products where data and AI create real leverage?</h2>
+        <p>Ritu Sharma · Product, Data Science and AI · United States</p>
+        <div class="contact-links">
+          <a class="button" href="mailto:ritusharma0212@gmail.com">Email Ritu</a>
+          <a class="button secondary" href="https://www.linkedin.com/in/ritusharma021288" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="wrap">
+    <div>© Ritu Sharma</div>
+    <div class="footer-right">Product · Data · AI</div>
+  </footer>
+</body>
+</html>
